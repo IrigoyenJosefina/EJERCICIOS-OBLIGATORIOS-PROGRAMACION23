@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var Masajista_1 = require("./Masajista");
+var Entrenador_1 = require("./Entrenador");
+var Jugadores_1 = require("./Jugadores");
+var NumeroDeSocio_1 = require("./NumeroDeSocio");
+var numeroDeSocioEnzoF = new NumeroDeSocio_1.NumeroDeSocio("Chelsea", 1902822, "Jugador de futbol");
+var jugador01 = new Jugadores_1.Jugadores("Enzo", "Fernandez", "ZAB000254", "17/01/2001", "Centrocampista", numeroDeSocioEnzoF);
+var numeroDeSocioLionelS = new NumeroDeSocio_1.NumeroDeSocio("Chelsea", 2341567, "Entrenador");
+var entrenador01 = new Entrenador_1.Entrenador("Lionel", "Scaloni", "SEW902345", "16/05/1978", numeroDeSocioLionelS);
+var numeroDeSocioMarceloD = new NumeroDeSocio_1.NumeroDeSocio("Chelsea", 1234098, "Masajista");
+var masajista01 = new Masajista_1.Masajista("Marcelo", "D´andrea", "PSW908721", "09/10/1980", "Lunes,miercoles y viernes", numeroDeSocioMarceloD);
+console.log(jugador01.calcularSueldo(28));
+console.log(entrenador01.calcularSueldo(25));
+console.log(masajista01.calcularSueldo(12));
